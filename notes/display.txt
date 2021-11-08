@@ -1,0 +1,30 @@
+display se refiere al tipo de vizulizacion que tienen los elementos HTML
+
+- Block
+    - Puedes usar width height 
+    - se ajusta al tamaño de la pantalla.
+    - Se coloca uno debajo del otro.
+
+
+- Inline
+    - Se ajusta al tamaño del componente en si mismo.
+    - No puede usar propiedades de height ni width
+    - Puedes usar margin y padding pero se puede encimar los componentes.
+    - NO respeta el margin de los elementos y puede llegar a encimarse.
+    - Se colocan los elementos uno del lado del otro.
+    NO RESPETA:
+        - width 
+        - height
+        - margin vertical
+
+
+- Inline Block
+    - Se ajusta al tamaño del compoenente.
+    - Puedes usar propiedades de block como el width y el height.
+    - Respeta el margin de los elementos.
+    - Se colocan los elementos uno a lado del otro pero respeta las propiedades
+    del bloque.
+
+- Flex
+
+- Grid
