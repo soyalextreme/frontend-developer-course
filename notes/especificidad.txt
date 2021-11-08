@@ -66,3 +66,15 @@ html es padre de body pero aun asi no tiene ningun impacto y
 selecionara el ultimo selector. Por lo que se deduce que la imporancia del Orden
 de la declaracion es imporante.
 
++ especificidad + importancia en los estilos.
+
+
+
+Calculadora de especificidad:
+
+- Selectores de tipo(p, h1, a) y pseudo-elementos ::after 
+    Valor: 1
+- Selectores de Clase(class="foo") y pseudo-clases :hover
+    Valor: 10
+- ID (id="unique")
+    Valor 100  Especificidad mas alta.
