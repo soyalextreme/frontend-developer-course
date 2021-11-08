@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox | Lesson</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: blueviolet;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+      }
+
+      .item {
+        width: 30px;
+        height: 30px;
+        background-color: papayawhip;
+      }
+
+      .container > .item:nth-child(2n + 1) {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

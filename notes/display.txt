@@ -5,6 +5,16 @@ display se refiere al tipo de vizulizacion que tienen los elementos HTML
     - se ajusta al tamaño de la pantalla.
     - Se coloca uno debajo del otro.
 
+    RESPETA:
+        - Margin vertical
+        - Width 
+        - height
+
+    Elemento ejemplo:
+    <div></div>
+    <p></p>
+    <h1></h1>
+
 
 - Inline
     - Se ajusta al tamaño del componente en si mismo.
@@ -12,10 +22,14 @@ display se refiere al tipo de vizulizacion que tienen los elementos HTML
     - Puedes usar margin y padding pero se puede encimar los componentes.
     - NO respeta el margin de los elementos y puede llegar a encimarse.
     - Se colocan los elementos uno del lado del otro.
+
     NO RESPETA:
         - width 
         - height
         - margin vertical
+
+    Elemento ejemplo de inline:
+        <span></span>
 
 
 - Inline Block
