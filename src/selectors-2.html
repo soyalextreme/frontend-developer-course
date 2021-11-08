@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors Convined - Lesson</title>
+    <style>
+      /* all paragraphs inside a div */
+      div p {
+        color: rebeccapurple;
+      }
+
+      /* Direct child of the selected  */
+      div > p {
+        background-color: blanchedalmond;
+      }
+
+      /* Next element, meaning the adjacent component */
+      div + section {
+        background-color: red;
+      }
+
+      /* Brothers selectors after the selected */
+      a ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section>
+        <p>Yes, sir</p>
+        <p>Im inside a div</p>
+      </section>
+    </div>
+    <div>
+      <section>
+        <p>No, sir</p>
+      </section>
+    </div>
+    <div>
+      <div>
+        <p>Platzi</p>
+        <div>Es</div>
+      </div>
+      <nav></nav>
+      <section>
+        <p>Anterior a un div</p>
+      </section>
+      <div>
+        <section></section>
+      </div>
+      <section>
+        <p>adyacente a div</p>
+      </section>
+      <div>
+        <p>Pre-Brother of A</p>
+        <a href="#">Brother of P</a>
+        <p>Brother of A</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: green;
+      }
+
+      p:hover {
+        color: peru;
+        font-size: 2rem;
+      }
+
+      div p:nth-child(2) {
+        color: red;
+      }
+
+      p::first-letter {
+        color: springgreen;
+      }
+
+      p::before {
+        content: "✨";
+      }
+
+      p::after {
+        content: "✔";
+      }
+
+      ::placeholder {
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hola</p>
+    <div>
+      <p>Hola</p>
+      <p>Soy</p>
+      <p>Alex</p>
+    </div>
+    <div>
+      <input type="text" placeholder="name" />
+    </div>
+  </body>
+</html>

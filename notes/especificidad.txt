@@ -1,0 +1,68 @@
+
+1- Especificidad es un valor que se le da a una propiedad de CSC que determina 
+cuales seran los cambios observados dentro de un determinado elemento.
+
+2- Orden de la especificidad es:
+    - Selector de tipo  p, a, ul, li, pseudo-elementos
+    - Selector por clase "class=classname" .classname, pseudo-clases
+    - Selector por ID el cual debe de ser unico para cada componente 
+
+No especificidad:
+- Selector universal *
+- Selectores convinadores > ~ +  
+- pseudo-clase :not() -> dentro de la negacion.
+
+Diferencias entre id y class -> class se aplica a multiples elementos mientras que 
+el id hace referencia a un solo elemento y deberia de considerarse mas especifico.
+
+!important -> Mala practica para romper la especificidad y aplicar el cambio forzandolo
+a mostrarse.
+    -> puede usarse en distintos selectores o en el mismo.
+    p {
+        background-color: red;
+        background-color: pink !important;
+    }
+
+    p {
+        background: red !important;
+    }
+
+    .p-class {
+        background: pink;
+    }
+
+
+Important no debe de ser considerado sin antes pensar las reglas de especificidad.
+
+Important es util en librerias como Bootstrap o NormilizeCSS para sobreescribir cambios.
+
+
+
+la pseudoclase :not no es considerada dentro del calculo de la especificidad. Pero
+si es usado antes un selector si se considerar la especificidad del selector.
+
+el attributo referenciado como id es tomado como id y tiene una menor especificidad que el 
+id puro.
+
+// menos especificidad
+p[id="unique"] {    
+}
+
+// respeta y tiene mayor especificidad.
+p#unique {
+
+}
+
+Proximidad en el arbol de nodos del html no tiene especificidad.
+
+body h1 {
+  color: green;
+}
+html h1 {
+  color: purple;
+}
+
+html es padre de body pero aun asi no tiene ningun impacto y 
+selecionara el ultimo selector. Por lo que se deduce que la imporancia del Orden
+de la declaracion es imporante.
+

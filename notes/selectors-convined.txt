@@ -1,0 +1,23 @@
+div p {
+
+}
+
+verifica todos los elementos descendientes.
+
+
+div > p {
+
+}
+
+
+el hijo tiene que ser directo.
+
+p + a {
+}
+
+elemento adyacente debe de ser hermano continuo directamente del elemento 1.
+
+
+p ~ a {
+    elementos adyacentes generales , ya sea antes o despues
+}

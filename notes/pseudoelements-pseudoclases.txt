@@ -1,0 +1,15 @@
+PseudoClase es una palabre clave que añada valores especificos a un 
+selector en base a un estado especifico del elemento.
+
+:hover
+:visited
+:checked
+
+
+Pseudo elemento es una palabra clave que hace referencia para cambiar el estilo
+de una parte especifica de un elemento y NO hace referencia a ningun estado en 
+particular de un elemento.
+
+::after
+::before
+::placeholder
